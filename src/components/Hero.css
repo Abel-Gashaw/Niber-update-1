@@ -1,0 +1,155 @@
+/* Hero.css */
+
+.hero {
+  /* background-image: url("./hero-image.jpg"); */
+  background-image: url("./thome.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  min-height: 90vh;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  margin-top: 200px;
+  margin-bottom: 10px;
+  margin-left: 250px;
+}
+
+.hero p {
+  font-size: 2rem;
+  max-width: 600px;
+  margin: 10px auto;
+  margin-left: 250px;
+}
+
+.hero button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #fd9a01;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  margin-top: 50px;
+}
+/* Hero.css */
+
+.btn {
+  /* styles */
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fd9a01;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+}
+/* Programs.css */
+
+.progra {
+  text-align: start;
+  display: flex;
+  width: 100%;
+  max-width: 97%;
+  margin: auto;
+}
+
+div h1 {
+  font-size: 36px;
+
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.prog {
+  background: #fd9a01;
+  margin: 16px 0;
+  border-radius: 4px;
+  width: 100%;
+
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prog h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.prog p {
+  margin-top: 5px;
+}
+.program-img {
+  /* margin-right: 20px; */
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+.program-img img {
+  /* margin-right: 20px; */
+  height: 100%;
+  width: 100%;
+}
+
+.linkdiv {
+  display: grid;
+  place-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.projectco {
+  display: flex;
+  justify-content: space-around;
+}
+
+.devco {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    /* background-image: url("./hero-image.jpg"); */
+    background-image: url("./thome.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    place-content: center;
+  }
+  .progra {
+    flex-direction: column;
+  }
+  .prog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .program h3 {
+    display: inline;
+    margin-bottom: 0px;
+  }
+  .projectco {
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  .hero p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 10px auto;
+    margin-left: 50px;
+  }
+}

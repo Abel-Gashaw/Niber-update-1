@@ -1,0 +1,50 @@
+/* Donate.css */
+
+.donate {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 90vh;
+}
+
+.donate h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.donate p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.donate form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.donate button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.donate button[type="submit"]:hover {
+  background: #0062cc;
+}
+.label {
+  margin-top: 50px;
+  padding: 5px;
+}
