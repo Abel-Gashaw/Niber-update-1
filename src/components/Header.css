@@ -1,28 +1,29 @@
 /* Header.css */
 
 .header {
-  background: rgb(73, 70, 70);
-  color: #fff;
+  background: #fd6104;
+  color: black;
   padding: 1rem;
   display: flex;
   align-items: center;
-  /* position: fixed; */
+  position: fixed;
+
   width: 100%;
+  z-index: 1000px;
 }
 
-.header h1 {
+.header div {
   margin-right: auto;
   margin-left: 50px;
-}
-.header h1 a {
-  list-style: none;
-  text-decoration: none;
-  color: white;
 }
 
 .header nav {
   display: flex;
   margin-right: 50px;
+  position: relative;
+}
+.humbtn {
+  display: none;
 }
 
 .header nav ul {
@@ -37,7 +38,7 @@
 }
 
 .header nav a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -49,6 +50,72 @@
   color: #fff;
   font-size: 1.5rem;
 }
+/* Submenu styles */
+/* 
+.submnu {
+  display: flex;
+  flex-direction: column;
+} */
+/* Submenu Styles */
+.Menu {
+  position: relative;
+}
+.ali {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fachek {
+  width: 15px;
+  margin-bottom: -7px;
+  margin-left: 3px;
+}
+.programs-submenu {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  /* pointer-events: none; */
+  transition: 0.2s;
+  width: max-content;
+}
+
+.programs-submenu li {
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+.programs-submenu li a {
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+.programs-submenu li:last-child {
+  border-bottom: none;
+}
+
+.Menu:hover .programs-submenu {
+  opacity: 1;
+  pointer-events: auto;
+  margin-top: 7px;
+}
+
+.submenu li {
+  padding: 10px;
+}
+
+.submenu li svg {
+  margin-right: 6px;
+}
+/* Navbar.css */
+
+.navbar-menu.open {
+  transform: translateX(0);
+}
 
 @media (max-width: 768px) {
   /* Mobile menu toggle button */
@@ -58,11 +125,29 @@
 
   /* Hide nav menu */
   .header nav {
-    display: none;
+    position: relative;
   }
 
   /* Show nav when open */
   .header.open nav {
     display: flex;
+  }
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+
+    color: #fff;
+    list-style: none;
+    padding: 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+  }
+  .humbtn {
+    display: block;
   }
 }

@@ -2,8 +2,8 @@
 
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import images from "../Images/food-program.jpg";
-import dev1 from "../Images/dev1.png";
+//import images from "../Images/food-program.jpg";
+//import dev1 from "../Images/dev1.png";
 import farm11 from "../Images/farm11.png";
 import agri from "../Images/Agri.png";
 import rural from "../Images/rural.png";
@@ -13,8 +13,8 @@ import school from "../Images/shool.png";
 import sycho from "../Images/sycho.png";
 import emer from "../Images/emer.png";
 import consum from "../Images/consum.png";
-import don2 from "../Images/don2.png";
 
+import don2 from "../Images/hum1.png";
 function Hero() {
   return (
     <>
@@ -31,10 +31,9 @@ function Hero() {
       <div className="projectco">
         <div className="devco">
           <div>
-            <h1>Developmental Projects</h1>
+            <h2>Developmental</h2>
           </div>
           <div className="prog">
-            <h3>Niber Foundation plan on developmental programs</h3>
             <p>
               Political strength emanates from strong economy. So, economic
               empowerment of Tegarus is a basis for all.
@@ -44,12 +43,11 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="humcon">
           <div>
-            <h1>Humanitarian Projects</h1>
+            <h2>Humanitarian</h2>
           </div>
           <div className="prog">
-            <h3>Niber Foundation plan on Humanitarian programs</h3>
             <p>
               Quick emergency relief need, with an intention of ‘no one will
               NEVER die due to post-war intervention failure’
@@ -111,7 +109,7 @@ function Hero() {
       </div>
       <div className="linkdiv">
         <Link to="/programs" className="btn">
-          See More
+          Read More
         </Link>
       </div>
       <div>
@@ -168,7 +166,7 @@ function Hero() {
       </div>
       <div className="linkdiv">
         <Link to="/programs" className="btn">
-          See More
+          Read More
         </Link>
       </div>
     </>

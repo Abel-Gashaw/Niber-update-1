@@ -1,6 +1,7 @@
 .programs {
-  max-width: 80%;
-  margin: 60px auto;
+  /* max-width: 80%; */
+  /* margin: 60px auto; */
+  margin-top: 0px;
 }
 
 .programs h1 {
@@ -41,6 +42,7 @@
   display: flex;
   flex-direction: column;
 }
+
 @media (max-width: 768px) {
   .container {
     display: flex;

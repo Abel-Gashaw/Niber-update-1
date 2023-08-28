@@ -25,12 +25,15 @@
 }
 
 .login-form button {
-  background: blue;
+  background: #fd6104;
   color: white;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
   margin-top: 20px;
+}
+.login-form button:hover {
+  background: #e75c0b;
 }
 
 @media (max-width: 600px) {

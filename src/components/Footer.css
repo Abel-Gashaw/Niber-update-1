@@ -1,6 +1,6 @@
 .footer {
-  background: rgb(73, 70, 70);
-  color: #fff;
+  background: #fd6104;
+  color: black;
   padding: 2rem;
 }
 
@@ -43,6 +43,11 @@
   font-size: 1.2rem;
   color: #333;
   transition: all 0.3s;
+}
+.social-icons a img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
 }
 
 .social-icons a:hover {

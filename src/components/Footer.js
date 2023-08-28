@@ -1,6 +1,11 @@
 // Footer.js
 
+import { Link } from "react-router-dom";
 import "./Footer.css";
+import one from "../Images/1.png";
+import two from "../Images/2.png";
+import three from "../Images/3.png";
+import four from "../Images/4.png";
 
 export default function Footer() {
   return (
@@ -9,34 +14,57 @@ export default function Footer() {
         <div className="footer-links">
           <h3>Links</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Programs</li>
-            <li>Contact</li>
+            <Link to="/">
+              {" "}
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              {" "}
+              <li>About</li>
+            </Link>
+            <Link to="/programs">
+              {" "}
+              <li>Programs</li>
+            </Link>
+            <Link to="/donate">
+              {" "}
+              <li>Donate</li>
+            </Link>
           </ul>
         </div>
 
         <div className="footer-info">
           <h3>Info</h3>
           <p>Niber Org</p>
-          <p>123 Main St</p>
+          <p> adihaqi</p>
           <p>Mekelle, Tigray</p>
         </div>
 
         <div className="social-icons">
-          <a href="#">
-            <i className="fab fa-facebook"></i>
+          <a href="https://www.youtube.com/@NiberFoundation">
+            <i className="fab fa-twitter">
+              <img src={four} alt="" />
+            </i>
+          </a>
+          <a href="https://www.facebook.com/Niber.Foundation?mibextid=ZbWKwL">
+            <i className="fab fa-facebook">
+              <img src={one} alt="" />
+            </i>
           </a>
           <a href="#">
-            <i className="fab fa-twitter"></i>
+            <i className="fab fa-twitter">
+              <img src={two} alt="" />
+            </i>
           </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
+          <a href="https://twitter.com/NiberFoundation?">
+            <i className="fab fa-twitter">
+              <img src={three} alt="" />
+            </i>
           </a>
         </div>
       </div>
 
-      <p className="copyright">&copy; 2023 Nonprofit</p>
+      <p className="copyright">&copy; 2023 Niber Foundation</p>
     </footer>
   );
 }

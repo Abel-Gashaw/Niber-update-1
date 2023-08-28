@@ -12,6 +12,10 @@
   place-content: center;
   min-height: 90vh;
 }
+.logo {
+  height: 50px;
+  width: 150px;
+}
 
 .hero h1 {
   font-size: 5rem;
@@ -30,11 +34,14 @@
 .hero button {
   padding: 1rem 2rem;
   border: none;
-  background: #fd9a01;
+  background: #fd6104;
   color: #fff;
   border-radius: 4px;
   font-size: 1.25rem;
   margin-top: 50px;
+}
+.hero button:hover {
+  background: #e75c0b;
 }
 /* Hero.css */
 
@@ -42,13 +49,16 @@
   /* styles */
   padding: 0.5rem 1rem;
   border: none;
-  background: #fd9a01;
+  background: #fd6104;
   color: #fff;
   border-radius: 4px;
   font-size: 1.25rem;
   text-decoration: none;
   width: 200px;
   text-align: center;
+}
+.btn:hover {
+  background: #e75c0b;
 }
 /* Programs.css */
 
@@ -66,9 +76,15 @@ div h1 {
   margin-bottom: 30px;
   text-align: center;
 }
+div h2 {
+  font-size: 26px;
+
+  margin-bottom: 30px;
+  text-align: center;
+}
 
 .prog {
-  background: #fd9a01;
+  background: whitesmoke;
   margin: 16px 0;
   border-radius: 4px;
   width: 100%;
@@ -106,11 +122,16 @@ div h1 {
 }
 .projectco {
   display: flex;
-  justify-content: space-around;
+  max-width: 97%;
+  margin: auto;
 }
 
 .devco {
+  flex: 1;
   margin-right: 20px;
+}
+.humcon {
+  flex: 1;
 }
 
 @media (max-width: 600px) {
@@ -151,5 +172,9 @@ div h1 {
     max-width: 600px;
     margin: 10px auto;
     margin-left: 50px;
+  }
+  .devco {
+    flex: 1;
+    margin-right: 0px;
   }
 }
