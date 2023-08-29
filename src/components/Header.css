@@ -111,37 +111,9 @@
   margin-right: 6px;
 }
 
-.navbar-links.open {
-  transform: translateX(0);
-}
 /* Navbar.css */
 nav button {
   display: none;
 }
 @media (max-width: 768px) {
-  /* Hide nav menu */
-  nav button {
-    display: block;
-    position: relative;
-  }
-  .navbar-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 60px);
-    background: #333;
-    color: #fff;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-  }
-
-  .navbar-links.open {
-    transform: translateX(0);
-  }
 }
