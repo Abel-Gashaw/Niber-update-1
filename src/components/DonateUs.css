@@ -53,3 +53,9 @@
   margin-top: 50px;
   padding: 5px;
 }
+@media (max-width: 768px) {
+  .formco {
+    display: flex;
+    flex-direction: column;
+  }
+}

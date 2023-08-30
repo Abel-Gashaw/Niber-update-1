@@ -7,9 +7,9 @@
   display: flex;
   align-items: center;
   position: fixed;
-
   width: 100%;
   z-index: 1000px;
+  top: 0;
 }
 
 .header div {
@@ -49,13 +49,7 @@
   color: #fff;
   font-size: 1.5rem;
 }
-/* Submenu styles */
-/* 
-.submnu {
-  display: flex;
-  flex-direction: column;
-} */
-/* Submenu Styles */
+
 .Menu {
   position: relative;
 }
@@ -115,5 +109,36 @@
 nav button {
   display: none;
 }
+.fa-bars {
+  display: none;
+}
 @media (max-width: 768px) {
+  .fa-bars {
+    display: block;
+    z-index: 100;
+  }
+
+  .nav {
+    position: relative;
+  }
+  .navul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    background: whitesmoke;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 60px);
+    transform: translateX(-60%);
+    transition: transform 0.5s;
+  }
+  .navul li {
+    margin-top: 30px;
+  }
+  .navul li a {
+    font-size: 18px;
+  }
 }

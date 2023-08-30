@@ -1,8 +1,8 @@
 // Humanitarian.js
 import "./humanitarian.css";
-
-import hum1 from "../Images/hum1.png";
+import work from "../Images/work3.png";
 import med1 from "../Images/med1.png";
+import food1 from "../Images/food1.png";
 
 export default function Humanitarian() {
   return (
@@ -13,41 +13,38 @@ export default function Humanitarian() {
       </header>
 
       {/* Food Assistance Section */}
+      <h2 className="h2">
+        {" "}
+        <span>Nourishing Communities:</span>
+        <br /> Niber foundation Food Assistance Program
+      </h2>
       <section>
         <div className="img-container">
-          <img src={med1} alt="" />
+          <img src={food1} alt="" />
         </div>
         <div className="detailcontainer">
           <h2>Food Assistance</h2>
           <p>
-            Inspiring News from Mekelle!! Accept our Warm Greetings in advance!!
-            Today August on the 16th of August 2023 Niber Foundation has held a
-            vibrant & warm Handing over of Medicinal Support worth of 6 Million.
-            At the event which took place at Axum Hotel Mekelle, Delegates and
-            leaders from the Interim Administration of Tigrai Bureau of Health,
-            The Tigrai Patriots' Commission, and Medical center for the wounded
-            veterans, and invited guests availed to the reception of the aid.
-            They related bodies remarked the Foundation's blessed hands of
-            charity to those facing medicinal lack, and have expressed immense
-            appreciation for the initiative Niber Foundation took which shall be
-            strengthened and followed as an examplary deed. They have all
-            expressed their hope Niber's continuing support in the over all
-            recovery,reconstruction, and rehabilitation of the Post-War Tigrai.
-            During the event, regional mainstream medias availed for News
-            Coverage of the event that will be broadcasted for the wider public.
-            I on behalf of the Mekelle Niber Foundation team, would like to
-            dearly extend for the contributing partners, friends, and families
-            of Niber's Endevours. With out your contribution and dedicated
-            efforts, this would have not happened. God bless you all. We
-            definitely believe not only Niber's Vision and Mission of realizing
-            a recovered and restored Tigrai, but also a more civilized, stable
-            and economically strong Tigrai more than ever before. Have a good
-            time!!
+            Niber foundation Food Assistance Program is a shining example of how
+            a community can come together to address the pressing issue of food
+            insecurity. With their commitment to providing access to fresh,
+            nutritious food, coupled with educational opportunities and
+            sustainable initiatives, they are not only alleviating immediate
+            hunger but also empowering individuals and families to break the
+            cycle of food insecurity. Through their tireless efforts, they are
+            nourishing communities and fostering a brighter, healthier future
+            for all.
           </p>
         </div>
       </section>
 
       {/* Medical Assistance Section */}
+      <h2 className="h2">
+        {" "}
+        <span>Healing Hands:</span>
+        <br /> Enhancing Healthcare Access through a Niberfoundation Medical
+        Assistance Program
+      </h2>
       <section className="medsec-co">
         <div className="med1img-co">
           <img src={med1} alt="" className="med1img" />
@@ -55,29 +52,39 @@ export default function Humanitarian() {
         <div className="meddesc-co">
           <h2>Medical Assistance</h2>
           <p>
-            Inspiring News from Mekelle!! Accept our Warm Greetings in advance!!
-            Today August on the 16th of August 2023 Niber Foundation has held a
-            vibrant & warm Handing over of Medicinal Support worth of 6 Million.
-            At the event which took place at Axum Hotel Mekelle, Delegates and
-            leaders from the Interim Administration of Tigrai Bureau of Health,
-            The Tigrai Patriots' Commission, and Medical center for the wounded
-            veterans, and invited guests availed to the reception of the aid.
-            They related bodies remarked the Foundation's blessed hands of
-            charity to those facing medicinal lack, and have expressed immense
-            appreciation for the initiative Niber Foundation took which shall be
-            strengthened and followed as an examplary deed. They have all
-            expressed their hope Niber's continuing support in the over all
-            recovery,reconstruction, and rehabilitation of the Post-War Tigrai.
-            During the event, regional mainstream medias availed for News
-            Coverage of the event that will be broadcasted for the wider public.
-            I on behalf of the Mekelle Niber Foundation team, would like to
-            dearly extend for the contributing partners, friends, and families
-            of Niber's Endevours. With out your contribution and dedicated
-            efforts, this would have not happened. God bless you all. We
-            definitely believe not only Niber's Vision and Mission of realizing
-            a recovered and restored Tigrai, but also a more civilized, stable
-            and economically strong Tigrai more than ever before. Have a good
-            time!!
+            Nber foundation Medical Assistance Program is a beacon of hope for
+            individuals and families who face barriers in accessing quality
+            healthcare. Through its focus on affordable services, a robust
+            referral network, prescription medication assistance, health
+            education, and mental health support, the program is transforming
+            lives and restoring dignity to those in need. By addressing the
+            healthcare gap, the organization is paving the way for a healthier
+            and more equitable society, where everyone has the opportunity to
+            thrive.
+          </p>
+        </div>
+      </section>
+      <h2 className="h2">
+        {" "}
+        <span>Empowering Minds:</span>
+        <br /> Niber foundation Educational Assistance Program
+      </h2>
+      <section className="medsec-co">
+        <div className="med1img-co">
+          <img src={work} alt="" className="med1img" />
+        </div>
+        <div className="meddesc-co">
+          <h2>Educational Assistance</h2>
+          <p>
+            Empowering Minds is committed to transforming lives through
+            education. We firmly believe that education is a powerful tool for
+            personal growth, social mobility, and community development. By
+            providing scholarships, mentoring, skill development workshops,
+            career counseling, and a resource center, we aim to create a
+            supportive educational ecosystem that empowers individuals to
+            overcome obstacles and achieve their dreams. Together, let's build a
+            brighter future for our community through education. Join us in our
+            mission to empower minds and transform lives.
           </p>
         </div>
       </section>

@@ -2,57 +2,78 @@ import { useState } from "react";
 import "./Login.css";
 
 function Login() {
-  const [isLogin, setIsLogin] = useState(true);
-
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = (e) => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [address, setAddress] = useState("");
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
-
-    if (isLogin) {
-      // Call login API
+    let result = await fetch(
+      //'http://localhost:5000/register', {
+      "http://localhost:5000/niberdb",
+      {
+        method: "post",
+        body: JSON.stringify({ name, email, phoneNumber, address }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    result = await result.json();
+    console.warn(result);
+    if (result) {
+      alert(
+        "Well Come to Niber Foundation pls check your email for any update"
+      );
+      setEmail("");
+      setName("");
+      setPhoneNumber("");
+      setAddress("");
     } else {
-      // Call register API
+      alert("Already exist");
     }
   };
-
   return (
-    <div className="login-container ">
-      <h2>{isLogin ? "Login" : "Register"}</h2>
-
-      <form onSubmit={handleSubmit} className="login-form">
+    <>
+      <form action="" className="form">
+        <h1 className="head">Subscription</h1>
+        <input
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="field"
+        />
+        <br></br>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="field"
         />
-
+        <br></br>
         <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          type="text"
+          placeholder="Phone number"
+          value={phoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          className="field"
         />
-
-        <button type="submit">{isLogin ? "Login" : "Register"}</button>
-
-        {isLogin && (
-          <p>
-            Don't have an account?{" "}
-            <button onClick={() => setIsLogin(false)}>Register</button>
-          </p>
-        )}
-
-        {!isLogin && (
-          <p>
-            Already registered?{" "}
-            <button onClick={() => setIsLogin(true)}>Login</button>
-          </p>
-        )}
+        <br></br>
+        <input
+          type="text"
+          placeholder="Address"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+          className="field"
+        />
+        <br></br>
+        <button type="submit" onClick={handleOnSubmit} className="submit-btn">
+          Subscribe
+        </button>
       </form>
-    </div>
+    </>
   );
 }
 

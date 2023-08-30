@@ -37,6 +37,9 @@ function AboutUs() {
       </div>
       <h2>Message from NIBER Community</h2>
       <div className="messcontainer">
+        <div className="messimgco">
+          <img src={mess1} alt="" className="mesimg" />
+        </div>
         <div>
           <p>
             Brothers and siters in Tigray, We want you to know that our heart
@@ -67,26 +70,8 @@ function AboutUs() {
             With heartfelt warmth and unwavering empathy, NIBER Community
           </p>
         </div>
-        <div className="messimgco">
-          <img src={mess1} alt="" className="mesimg" />
-        </div>
       </div>
       <div className="planco">
-        <div className="planco1">
-          <h2>Vision</h2>
-
-          <p>
-            To be a economically strong socially stable region by creating 100
-            thousand entrepreneurs and 1.5 million employees By 2032
-          </p>
-
-          <h2>Values</h2>
-
-          <p>
-            Innovation | Social responsibility & Moral | Quality | Excellence
-            Team work & Partnership | Trust
-          </p>
-        </div>
         <div className="planco2">
           <h2>Purpose & Goal Statement</h2>
 
@@ -108,6 +93,24 @@ function AboutUs() {
             to this noble undertaking. Furthermore, we are the sons and
             daughters of the very community that we plan to serve and we share
             the pain and joy when we succeed.
+          </p>
+        </div>
+        <div className="planco1">
+          <h2>Vision</h2>
+
+          <p>
+            To be a economically strong socially stable <br />
+            region by creating 100 thousand entrepreneurs <br />
+            and 1.5 million employees By 2032
+          </p>
+
+          <h2>Values</h2>
+
+          <p>
+            Innovation | Social responsibility & Moral
+            <br />
+            | Quality | Excellence <br />
+            Team work & Partnership | Trust
           </p>
         </div>
       </div>

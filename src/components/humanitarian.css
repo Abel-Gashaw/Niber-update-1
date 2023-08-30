@@ -12,8 +12,9 @@
 section {
   display: flex;
   align-items: center;
-  margin: 80px 0;
+  margin: 40px 0;
 }
+
 .detailcontainer {
   flex: 1;
 }
@@ -30,6 +31,15 @@ section {
 section h2 {
   font-size: 32px;
   margin-bottom: 10px;
+  color: #e75c0b;
+}
+.h2 {
+  margin: 80px 20px;
+  font-size: 23px;
+}
+.h2 span {
+  color: #e75c0b;
+  font-size: 30px;
 }
 
 section p {
