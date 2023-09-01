@@ -7,11 +7,16 @@ import {
   FaHandHoldingHeart,
   FaToolbox,
   FaBars,
+  FaTimes,
 } from "react-icons/fa";
 import { useState } from "react";
 
 function Header() {
-  const [open, setOpen] = useState(true);
+  // const [open, setOpen] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <header className="header">
       <div>
@@ -21,46 +26,49 @@ function Header() {
       </div>
 
       <nav className="nav">
-        <button onClick={() => setOpen(!open)} className="fa-bars">
+        {/* <button onClick={() => setOpen(!open)} className="fa-bars">
           <FaBars />
         </button>
-        {open && (
-          <ul className="navul">
+        {open && ( */}
+        <div className="menu-icon" onClick={toggleMenu}>
+          <i className={showMenu ? <FaTimes /> : <FaBars />}></i>
+        </div>
+        <ul className={showMenu ? "menu active" : "menu"}>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <ul className="Menu">
             <li>
-              <Link to="/">Home</Link>
-            </li>
-            <ul className="Menu">
-              <li>
-                <a href="#!">
-                  Programs
-                  <FaChevronDown className="fachek" />
-                </a>
+              <a href="#!">
+                Programs
+                <FaChevronDown className="fachek" />
+              </a>
 
-                <ul className="programs-submenu">
-                  <li>
-                    <FaHandHoldingHeart />
-                    <Link to="/humanitarian">Humanitarian</Link>
-                  </li>
+              <ul className="programs-submenu">
+                <li>
+                  <FaHandHoldingHeart />
+                  <Link to="/humanitarian">Humanitarian</Link>
+                </li>
 
-                  <li>
-                    <FaToolbox />
-                    <Link to="/programs">Development</Link>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-
-            <li>
-              <Link to="/donate">Donate</Link>
-            </li>
-            <li>
-              <Link to="/LoginPage">Subscribe</Link>
+                <li>
+                  <FaToolbox />
+                  <Link to="/programs">Development</Link>
+                </li>
+              </ul>
             </li>
           </ul>
-        )}
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+
+          <li>
+            <Link to="/donate">Donate</Link>
+          </li>
+          <li>
+            <Link to="/LoginPage">Subscribe</Link>
+          </li>
+        </ul>
+        {/* )} */}
       </nav>
     </header>
   );

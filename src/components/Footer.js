@@ -42,22 +42,22 @@ export default function Footer() {
 
         <div className="social-icons">
           <a href="https://www.youtube.com/@NiberFoundation">
-            <i className="fab fa-twitter">
+            <i>
               <img src={four} alt="" />
             </i>
           </a>
           <a href="https://www.facebook.com/Niber.Foundation?mibextid=ZbWKwL">
-            <i className="fab fa-facebook">
+            <i>
               <img src={one} alt="" />
             </i>
           </a>
           <a href="#">
-            <i className="fab fa-twitter">
+            <i>
               <img src={two} alt="" />
             </i>
           </a>
           <a href="https://twitter.com/NiberFoundation?">
-            <i className="fab fa-twitter">
+            <i>
               <img src={three} alt="" />
             </i>
           </a>

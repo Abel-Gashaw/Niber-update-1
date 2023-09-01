@@ -1,7 +1,7 @@
 // To connect with your mongoDB database
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://localhost:27017/niberdb")
+  .connect("mongodb+srv://aradom:leake@cluster0.68ef6yl.mongodb.net/niberdb") //mongodb://localhost:27017/niberdb  mongodb+srv://aradom:leake@cluster0.68ef6yl.mongodb.net/niberdb?retryWrites=true&w=majority
   .then(() => console.log("connected successfully"))
   .catch((err) => {
     console.error(err);
@@ -26,6 +26,11 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  selectedCountry: {
+    type: String,
+    required: true,
+  },
+
   date: {
     type: Date,
     default: Date.now,
