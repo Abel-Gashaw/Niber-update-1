@@ -165,7 +165,7 @@ function Hero() {
         </div>
       </div>
       <div className="linkdiv">
-        <Link to="/programs" className="btn">
+        <Link to="/humanitarian" className="btn">
           Read More
         </Link>
       </div>

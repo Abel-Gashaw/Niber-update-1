@@ -7,16 +7,33 @@ function Login() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const [country, setCountry] = useState("");
+  // Get MongoDB collection
+  // const Collection = require("./userSchema");
 
-  // ...
+  // Route handler for admin page
+  // app.get("/admin", async (req, res) => {
+  //   // Fetch all documents from collection
+  //   const documents = await Collection.find();
 
-  // <select
-  //   value={selectedCountry}
-  //   onChange={(e) => setSelectedCountry(e.target.value)}
-  // >
-  //   // options
-  // </select>;
+  //   // Build table rows array
+  //   let tableRows = [];
+  //   documents.forEach((doc) => {
+  //     tableRows.push(
+  //       <tr>
+  //         <td>${doc.name}</td>
+  //         <td>${doc.email}</td>
+  //         <td>${doc.phone}</td>
+  //       </tr>
+  //     );
+  //   });
+
+  //   // Render admin page with table
+  //   res.render("admin", {
+  //     layout: "adminLayout",
+  //     tableRows: tableRows.join(""),
+  //   });
+  // });
   const countries = countryList.getData();
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +47,9 @@ function Login() {
           email,
           phoneNumber,
           address,
-          country: selectedCountry?.value,
+          country,
+          // Send just the code property
+          // country: selectedCountry.name,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -47,72 +66,63 @@ function Login() {
       setName("");
       setPhoneNumber("");
       setAddress("");
-      selectedCountry("");
+      setCountry("");
     } else {
       alert("Already exist");
     }
   };
 
   return (
-    <>
-      <form action="" className="form">
-        <h1 className="head">Subscription</h1>
-        <input
-          type="text"
-          placeholder="Full Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="field"
-        />
-        <br></br>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="field"
-        />
-        <br></br>
-        <input
-          type="text"
-          placeholder="Phone number"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          className="field"
-        />
-        <br></br>
-        <input
-          type="text"
-          placeholder="Address"
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-          className="field"
-        />
-        <select>
-          {countries.map((country) => (
-            <option
-              key={country.code}
-              // value={country.code}
-              value={selectedCountry}
-              onChange={(e) => setSelectedCountry(e.target.value)}
-            >
-              {country.name}
-            </option>
-          ))}
-        </select>
-        {/* <select
-          value={selectedCountry}
-          onChange={(e) => setSelectedCountry(e.target.value)}
-        >
-          // options
-        </select>
-        ; */}
-        <br></br>
-        <button type="submit" onClick={handleOnSubmit} className="submit-btn">
-          Subscribe
-        </button>
-      </form>
-    </>
+    <form action="" className="form">
+      <h1 className="head">Subscription</h1>
+      <input
+        type="text"
+        placeholder="Full Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        className="field"
+      />
+      <br></br>
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        className="field"
+      />
+      <br></br>
+      <input
+        type="text"
+        placeholder="Phone number"
+        value={phoneNumber}
+        onChange={(e) => setPhoneNumber(e.target.value)}
+        className="field"
+      />
+      <br></br>
+      <input
+        type="text"
+        placeholder="Address"
+        value={address}
+        onChange={(e) => setAddress(e.target.value)}
+        className="field"
+      />
+      <select
+        value={country}
+        onChange={(e) => setCountry(e.target.value)}
+        className="country-select"
+      >
+        {countries.map((country) => (
+          <option key={country.code} value={country.name}>
+            {country.name}
+          </option>
+        ))}
+      </select>
+
+      <br></br>
+      <button type="submit" onClick={handleOnSubmit} className="submit-btn">
+        Subscribe
+      </button>
+    </form>
   );
 }
 

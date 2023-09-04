@@ -108,16 +108,16 @@
 nav button {
   display: none;
 }
-.fa-bars {
+/* .fa-bars {
   display: none;
-}
+} */
 @media (max-width: 768px) {
   .header nav ul {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     position: fixed;
-    justify-content: start;
+    justify-content: flex-start;
     background: whitesmoke;
     position: absolute;
     top: 30px;

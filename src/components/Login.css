@@ -106,3 +106,47 @@
   color: black;
   text-decoration: double;
 }
+/* Country select */
+.country-select {
+  display: block;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Hide default arrow */
+.country-select::-ms-expand {
+  display: none;
+}
+
+/* Custom arrow */
+.country-select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+
+  /* Adjust positioning */
+  pointer-events: none;
+  border-left: 1px solid #ccc;
+}
+
+/* Transition */
+.country-select:hover::after {
+  color: #888;
+}
+
+/* Options styling */
+.country-select option {
+  font-size: 16px;
+  padding: 0.2em 0.5em;
+}
+
+/* Highlight option */
+.country-select option:checked {
+  background: #eee;
+}
