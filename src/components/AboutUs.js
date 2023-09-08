@@ -17,22 +17,7 @@ function AboutUs() {
           conflict. At Niber Foundation, we understand the devastating impact of
           war on societies, leaving behind shattered infrastructure, displaced
           populations, and fractured economies. Our mission is to bring hope,
-          stability, and progress to these regions by implementing innovative
-          and impactful initiatives. Economic Empowerment: We strongly believe
-          that economic stability is the cornerstone of rebuilding communities.
-          Through our various programs and projects, we strive to create
-          sustainable livelihood opportunities for individuals affected by war.
-          By providing vocational training, microfinance support, and
-          entrepreneurship development, we aim to empower individuals to become
-          self-reliant and contribute to the economic growth of their
-          communities. Political Engagement: We recognize the significance of
-          political stability and good governance in post-conflict regions. Our
-          organization works closely with local governments, community leaders,
-          and civil society organizations to promote inclusive and transparent
-          governance systems. Through advocacy, capacity-building workshops, and
-          civic engagement initiatives, we aim to foster a culture of
-          accountability and participation, ensuring that the voices of the
-          marginalized are heard and represented.
+          
         </p>
       </div>
       <h2>Message from NIBER Community</h2>
@@ -54,20 +39,7 @@ function AboutUs() {
             The destruction of infrastructure, loss of loved ones, lack of basic
             necessities, and the emotional scars left by war are overwhelming.
             But even amidst the darkest times, there is always a glimmer of
-            hope. You possess an incredible strength and resilience that
-            inspires us all. Your determination to rebuild, to heal, and to
-            create a better future is truly commendable. Remember to lean on one
-            another, to support and uplift each other, together we are stronger.
-            While we may not be able to fully understand the depths of your
-            experiences, We want you to know that we are here to listen, to
-            offer support, and to amplify your voices. Your stories, your
-            struggles, and your dreams matter. We must never lose sight of the
-            importance of empathy, compassion, and understanding. We
-            passionately hope that stability will find its way to Tigray soon,
-            bringing an end to the suffering and paving the way for healing and
-            reconciliation. Until we meet, please know that you are not
-            forgotten. You are in our thoughts, our prayers, and our hearts.
-            With heartfelt warmth and unwavering empathy, NIBER Community
+            h
           </p>
         </div>
       </div>
